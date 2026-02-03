@@ -1,0 +1,15 @@
+ #include <stdio.h>
+     int main() {
+     int bal, n, i = 0, x, count = 0;
+     scanf("%d%d", &bal, &n);
+     while (i < n) {
+        scanf("%d", &x);
+         if (bal >= x) {
+            bal -= x;
+            count++;
+        } else
+         break;
+          i++;
+    }
+     printf(" %d %d", count, bal);
+ }
