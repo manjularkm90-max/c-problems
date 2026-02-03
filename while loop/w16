@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int max, n, i = 0, x, 
+    sum = 0, 
+    people = 0;
+    scanf("%d%d", &max, &n);
+    while (i < n) {
+        scanf("%d", &x);
+        if (sum + x <= max) {
+            sum += x;
+            people++;
+        } 
+        else
+        break;
+        i++;
+    }
+    printf("%d\n%s",people, people < n ? "Yes" : "No");
+}
