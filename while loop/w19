@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int cap, n, i = 0, x, 
+    treated = 0, 
+    rejected = 0;
+    scanf("%d%d", &cap, &n);
+    while (i < n) {
+        scanf("%d", &x);
+        if (treated < cap) {
+            if (treated + x <= cap)
+                treated += x;
+            else {
+                rejected += (treated + x - cap);
+                treated = cap;
+            }
+        } 
+        else rejected += x;
+        i++;
+    }
+    printf("%d%d", treated, rejected);
+}
