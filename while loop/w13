@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int data, n, i = 0, x, 
+    day = -1;
+    scanf("%d%d", &data, &n);
+    while (i < n) {
+        scanf("%d", &x);
+        data -= x;
+        if (data <= 0 && day == -1)
+            day = i + 1;
+        if (day != -1) break;
+        i++;
+    }
+    if (day == -1)
+        printf("Exhausted Day:Not Exhausted\nOverused Data: 0");
+    else
+        printf("%d%d", day, -data);
+}
