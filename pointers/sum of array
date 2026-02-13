@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=1;i<=n;i++){
+        scanf("%d",&arr[i]);
+    }int i;
+    int sum=0;
+    int *p=arr;
+    for(i=1;*(p+i)<=n;p++){
+        sum+=*(p+i);
+        
+    }printf("%d",sum);
+}
