@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    char str1[50];
+    char str2[50];
+    scanf("%s%s",str1,str2);
+    int i=0;
+    char *p=str1;
+    char *p2=str2;
+    while(*(p+i)!='\0'){
+        i++;
+        
+    }
+    int j=0;
+    while(*(p2+j)!='\0'){
+            j++;
+    }
+   printf("%s",p);
+   printf("%s",p2);
+    
+
+}
