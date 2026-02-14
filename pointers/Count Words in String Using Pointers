@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    char str[100]; 
+    char *p;
+    int count = 0;
+    fgets(str, sizeof(str), stdin);
+    p = str;
+    if (*p != '\0' && *p != '\n') {
+        count = 1;
+    }
+while (*p != '\0') {
+        if (*p == ' ') {
+            count++;   
+        }
+        p++;
+    }
+printf("%d", count);
+}
