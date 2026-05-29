@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int n = 100;
+    int count = 0;
+    int i = 5;
+
+    while (n / i >= 1) {
+        count += n / i;
+        i *= 5;
+    }
+
+    printf("%d", count);
+
+    return 0;
+}
