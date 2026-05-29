@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int arr[] = {1,2,3,5};
+    int n = 5;
+
+    int sum = n * (n + 1) / 2;
+
+    int i = 0;
+
+    while (i < n - 1) {
+        sum -= arr[i];
+        i++;
+    }
+
+    printf("Missing = %d", sum);
+
+    return 0;
+}
